@@ -1,0 +1,41 @@
+body {
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pd_back.jpg);
+	height: 100vh;
+	background-size: 850px;
+	background-position: center;
+}
+.title{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.title h1 a{
+	text-decoration: none;
+	color: crimson;
+	font-size: 100px;
+	margin-top: -30px;
+	font-family: broadway;
+}
+.title h1 a:hover{
+	color: lightcoral;
+}
+.button{
+	position: absolute;
+	top: 65%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	
+}
+.btn{
+	border: 1px solid #fff;
+	padding: 10px 30px;
+	color: white;
+	text-decoration: none;
+	transition: 0.6s ease;
+}
+.btn:hover{
+	background-color: #fff;
+	color: #000;
+}
+	

@@ -1,0 +1,53 @@
+body {
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(pd1.jpg);
+	height: 100vh;
+	background-size: 1600px;
+	background-position: center;
+}
+.reg p {
+	color: indianred;
+	font-size: 60px;
+	margin-left: 350px;
+	position: center;
+}
+
+.reg table {
+	color: white;
+	font-size: 30px;
+	font-family: times new roman;
+	margin-left: 10px;
+	position: left;
+}
+.reg form table tr td {
+		margin-top: 50px;
+		text-align: left;
+		margin-left: 100px;
+}
+	
+.reg form
+{
+	margin-left: 50px;
+	padding: 0 0 20px;
+	text-align: left;
+	font-size: 20px;
+	color: white;
+	font-family: arial rounded MT bold;
+}
+.reg input[type="submit"]
+	{
+		border: none;
+		outline: none;
+		height: 30px;
+		background: indianred;
+		color: #fff;
+		font-size: 18px;
+		border-radius: 2px;
+		margin-left: 500px;
+		margin-top: 30px;
+	}
+.reg input[type="submit"]:hover
+	{
+		cursor: pointer;
+		background: #ffc107 ;
+		color: #fff;
+	}

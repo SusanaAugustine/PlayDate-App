@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PlayDate App</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='display.css')}}"/>
+	</head>
+	<body style ="background-image:url({{ url_for('static', filename='pd_2.png') }});">
+		<div class="txt4">
+
+			
+			<p style = "font-family:Impact; color:Black; font size=6;">
+                <center>You're Matched with</center>
+            </p>
+			<form name="passdata4" action="/search4" method="POST">
+				<table>
+					{% if len == 0 %}
+					<div>No match Found</div>
+					{% else %}
+					{% for i in range (0, len) %}
+			        <tr>
+			            <td><p style ="font-family: georgia; color: White">
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[i]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[i]}}
+							<br>Gender : {{data['Gender'].iloc[i]}}
+							<br>Breed : {{data['Breed'].iloc[i]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[i]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[i]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[i]}}
+							</pre></ol>
+			            </p></td>
+			            <td>
+			                <input name="l{{i}}" type="radio" value="Like" />Like
+							<input name="l{{i}}" type="radio" value="Dislike" />Dislike
+			            </td>
+			            {% endfor %}
+			            {% endif %}
+			            <td>
+			                <input type="submit" value="submit" name="">
+			        	</td>
+			        </tr>
+			    </table>
+			</form>
+			
+
+		</div>
+	</body>
+</html>    

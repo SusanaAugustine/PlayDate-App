@@ -1,0 +1,264 @@
+<html>
+    <head>
+        <title>PlayDate App</title>
+        <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='home.css')}}"/>
+    </head>
+    <body style ="background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url({{ url_for('static', filename='pd1.jpg') }});">
+    <body>
+        <div class="reg">
+            <p style = "font-family:Impact;">
+                WELCOME TO PLAYDATE APP
+            </p>
+            <form name="passdata" action="/search" method="POST">
+                <table>
+                    <tr>
+                        <td>
+                            Your Doggo's Name :
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Name" name="dogname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Gender : 
+                        </td>
+                        <td>
+                            <input type="radio" name="Gender" value="m">Male
+                            <input type="radio" name="Gender" value="f">Female
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Age :
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Age" name="age" required min="1" max="180">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Is he/she Vccinated? :
+                        </td>
+                        <td>
+                            <input type="radio" name="vaccinated" value="y">Yes
+                            <input type="radio" name="vaccinated" value="n">No
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            His/Her Breed :
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Breed" name="breed" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Weight :
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Weight" name="weight" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Character :
+                        </td>
+                        <td>
+                            <select name="character" >
+                                <option></option>
+                                <option>Aggressive</option>
+                                <option>Calm</option>
+                                <option>Friendly</option>
+                                <option>Lazy</option>
+                                <option>Playful</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Body type :
+                        </td>
+                        <td>
+                            <select name="bodytype">
+                                <option></option>
+                                <option>A little extra</option>
+                                <option>Fit</option>
+                                <option>Average</option>
+                                <option>Obese</option>
+                                <option>Thin</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Diet :
+                        </td>
+                        <td>
+                            <select name="diet">
+                                <option></option>
+                                <option>Strictly non vegetarian</option>
+                                <option>Strictly vegetarian</option>
+                                <option>Vegan</option>
+                                <option>Anything</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Your Doggo's Temprament with other Doggos :
+                        </td>
+                        <td>
+                            <select name="temprament">
+                                <option></option>
+                                <option>Dislikes other Dogs</option>
+                                <option>Likes other Dogs</option>
+                                <option>Indifferent</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Owner's Name :
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Name" name="ownername" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            House Located (Area name) :
+                        </td>
+                        <td>
+                            <input type="text" placeholder="Area" name="locname" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Would you like a PlayDate app for your doggo? :
+                        </td>
+                        <td>
+                            <input type="radio" name="app1" value="y">Yes
+                            <input type="radio" name="app1" value="n">No
+                            <input type="radio" name="app1" value="m">Maybe
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Why would you use a PlayDate app for your doggo?
+                        </td>
+                        <td>
+                            <select name="whyapp">
+                                <option></option>
+                                <option>To find the best PlayDate for your Doggo</option>
+                                <option>For your doggo to mingle with other dogs</option>
+                                <option>To help other dogs who want to mingle</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            What traits would you look for in the parents of your date?
+                        </td>
+                        <td>
+                            <select name="ownertra">
+                                <option></option>
+                                <option>Be adventurous with both our doggos</option>
+                                <option>Strict</option>
+                                <option>Calm and uptight</option>
+                                <option>Friendly</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            What traits would you look for in your dog's  date?
+                        </td>
+                        <td>
+                            <select name="dogtra">
+                                <option></option>
+                                <option>Adventurous and always ready to go out</option>
+                                <option>Always ready to play</option>
+                                <option>ready to mingle with almost everyone</option>
+                                <option>Calm</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            How do you think this will benefit your doggo?
+                        </td>
+                        <td>
+                            <select name="benefit">
+                                <option></option>
+                                <option>Makes them friendly</option>
+                                <option>Calms down my doggo</option>
+                                <option>Gives them an opportunity to step out</option>
+                                <option>Therapeutic</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            How are you with your doggo?
+                        </td>
+                        <td>
+                            <select name="yourdog">
+                                <option></option>
+                                <option>Calm</option>
+                                <option>Strict</option>
+                                <option>Calm and strict but with limits</option>
+                                <option>Treat them as my own child</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            On a scale of 1 to 10 how comfortable are you with other dogs
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Rate" name="app2" min="1" max="10" required>
+                        </td>
+                    </tr>
+                    </tr>
+                    <tr>
+                        <td>
+                            Owner's Age :
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Age" name="ownerage" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            Number of doggs you own :
+                        </td>
+                        <td>
+                            <input type="number" placeholder="Number of Dogs" name="dogno" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            How often does your dog like to go out?
+                        </td>
+                        <td>
+                            <select name="goout">
+                                <option></option>
+                                <option>Daily</option>
+                                <option>Monthly once</option>
+                                <option>Likes to stay at home</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="submit" value="submit" name="">
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </body>	
+</html>
+

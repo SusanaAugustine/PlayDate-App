@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PlayDate App</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='display.css')}}"/>
+	</head>
+	<body style ="background-image:url({{ url_for('static', filename='pd_2.png') }});">
+	<body>
+		<div class="txt">
+			<p style = "font-family:Impact; color:Black; font size=6; ">
+                <center>You're Matched with</center>
+            </p>
+			<form name="passdata2" action="/search2" method="POST">
+				<table>
+			        <tr>
+			            <td><p style ="font-family: georgia; color: White">
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[0]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[0]}}
+							<br>Gender : {{data['Gender'].iloc[0]}}
+							<br>Breed : {{data['Breed'].iloc[0]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[0]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[0]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[0]}}
+							</pre></ol>
+			            </p></td>
+			            <td>
+			                <input name="l0" type="radio" value="Like" />Like
+							<input name="l0" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[1]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[1]}}
+							<br>Gender : {{data['Gender'].iloc[1]}}
+							<br>Breed : {{data['Breed'].iloc[1]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[1]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[1]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[1]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l1" type="radio" value="Like" />Like
+							<input name="l1" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[2]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[2]}}
+							<br>Gender : {{data['Gender'].iloc[2]}}
+							<br>Breed : {{data['Breed'].iloc[2]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[2]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[2]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[2]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l2" type="radio" value="Like" />Like
+							<input name="l2" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[3]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[3]}}
+							<br>Gender : {{data['Gender'].iloc[3]}}
+							<br>Breed : {{data['Breed'].iloc[3]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[3]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[3]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[3]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l3" type="radio" value="Like" />Like
+							<input name="l3" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[4]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[4]}}
+							<br>Gender : {{data['Gender'].iloc[4]}}
+							<br>Breed : {{data['Breed'].iloc[4]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[4]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[4]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[4]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l4" type="radio" value="Like" />Like
+							<input name="l4" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[5]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[5]}}
+							<br>Gender : {{data['Gender'].iloc[5]}}
+							<br>Breed : {{data['Breed'].iloc[5]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[5]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[5]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[5]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l5" type="radio" value="Like" />Like
+							<input name="l5" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[6]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[6]}}
+							<br>Gender : {{data['Gender'].iloc[6]}}
+							<br>Breed : {{data['Breed'].iloc[6]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[6]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[6]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[6]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l6" type="radio" value="Like" />Like
+							<input name="l6" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[7]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[7]}}
+							<br>Gender : {{data['Gender'].iloc[7]}}
+							<br>Breed : {{data['Breed'].iloc[7]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[7]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[7]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[7]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l7" type="radio" value="Like" />Like
+							<input name="l7" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[8]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[8]}}
+							<br>Gender : {{data['Gender'].iloc[8]}}
+							<br>Breed : {{data['Breed'].iloc[8]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[8]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[8]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[8]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l8" type="radio" value="Like" />Like
+							<input name="l8" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <ol><pre>Doggo : {{data['Name of your dog'].iloc[9]}}
+							<br>Is he/she vaccinated? : {{data['Vaccinated'].iloc[9]}}
+							<br>Gender : {{data['Gender'].iloc[9]}}
+							<br>Breed : {{data['Breed'].iloc[9]}}
+							<br>Age (in months) : {{data['Age (in months)'].iloc[9]}}
+							<br>Weight (in kg) : {{data['Weight (in kg)'].iloc[9]}}
+							<br>Owner's Name : {{data['Owner Name'].iloc[9]}}
+							</pre></ol>
+			            </td>
+			            <td>
+			                <input name="l9" type="radio" value="Like" />Like
+							<input name="l9" type="radio" value="Dislike" />Dislike
+			            </td>
+			        </tr>
+			        <tr>
+			            <td>
+			                <input type="submit" value="submit" name="">
+			            </td>
+			        </tr>
+			    </table>
+			</div>
+		</form>
+	</body>
+</html>
